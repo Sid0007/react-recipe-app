@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { recipeData } from "../data/tempDetails";
+/* import { recipeData } from "../data/tempDetails"; */
 import { Link } from "react-router-dom";
 
 export default class SingleRecipe extends Component {
@@ -35,7 +35,7 @@ export default class SingleRecipe extends Component {
       image_url,
       publisher,
       publisher_url,
-      source_url,
+    //  source_url,
       title,
       ingredients
     } = this.state.recipe;
