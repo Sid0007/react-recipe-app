@@ -11,11 +11,12 @@ export default function Navbar() {
         <img src={logo} alt="logo" style={{maxHeight:"20px"}} />
         <span>RoopaDecor</span>
       </Link>
-      <div className="collapse navbar-collapse show ml-sm-5">
+      
+      <div className="collapse navbar-collapse hide  ml-sm-5">
         <ul className="navbar-nav">
           <li className="navbar-item">
             <Link className="nav-link" to="/">
-              Home
+             Home         
             </Link>
           </li>
           <li className="navbar-item">
