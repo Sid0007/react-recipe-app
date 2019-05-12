@@ -26,7 +26,6 @@ export default class Recipes extends Component {
   try{
       const data = await fetch(this.state.url);
       const jsonData = await data.json();
-      console.log(jsonData);
       if(jsonData.recipes.length ===0) {
          this.setState({
            error:"sorry but your search did not return any recipes, please try again"
@@ -37,14 +36,14 @@ export default class Recipes extends Component {
           recipes:jsonData.recipes,
           error:''
         })
-      }
-     
-     
+      } 
   }
   catch(error){
      console.log(error);
   }
  }
+
+ 
 
  componentDidMount() {
   this.getRecipes();
