@@ -32,7 +32,7 @@ export default class SingleEvent extends Component {
       return product;
     });
 
-    const event = events.filter(item => item.id === this.state.id)[0];
+    const event = events.filter(item  => item.id === this.state.id)[0];
     const imageData = event.images.concat([]);
     this.setState({
       event,
@@ -53,8 +53,8 @@ export default class SingleEvent extends Component {
     } = this.state.event;
     console.log(this.state.event);
     let imageList = this.state.images;
-    let imageGallary = imageList.map(simage => (
-      <li key={simage.id} style={{ padding: "0.5rem", listStyleType: "none" }}>
+    let imageGallary = imageList.map((simage, index) => (
+      <li key={index} style={{ padding: "0.5rem", listStyleType: "none" }}>
         {" "}
         <img
           src={simage}
@@ -95,7 +95,7 @@ export default class SingleEvent extends Component {
               rel="noopener noreferrer"
               className="btn btn-primary mt-2 text-capitalize"
             >
-              Event Site (Facebook)
+              Event Site
             </a>
            
             <ul className="list-group mt-4">
@@ -111,7 +111,7 @@ export default class SingleEvent extends Component {
           <div className="row">
             <div className="table">
             <h2>More Images from the Event</h2>
-              <ul class="horizontal-list">{imageGallary}</ul>
+              <ul className="horizontal-list">{imageGallary}</ul>
             </div>
           </div>
         </div>
