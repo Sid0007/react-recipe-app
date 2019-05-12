@@ -74,13 +74,13 @@ export default class SingleEvent extends Component {
               to="/events"
               className="btn btn-warning mb-5 text-capatilize"
             >
-              back to recipes list
+              back to Events list
             </Link>
             <img
               src={image}
               className="d-block w-100"
               style={{ maxHeight: "30rem" }}
-              alt="recipe"
+              alt="Events List"
             />
           </div>
           {/* info */}
