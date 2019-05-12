@@ -11,10 +11,10 @@ export default function Header({ children, title, styleClass }) {
             </h1>
             {children}
             
-            <h1   className="text-light  display-5  mt-4 ">
-             roopatedla@gmail.com</h1>
-             <h1   className="text-light  display-5  mt-4 ">
-             07894710459</h1>
+            <h2   className="text-light  display-5  mt-4 ">
+             roopatedla@gmail.com</h2>
+             <h2   className="text-light  display-5  mt-4 ">
+             07894710459</h2>
           </div>
         </div>
       </div>
